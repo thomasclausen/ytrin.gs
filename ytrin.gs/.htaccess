@@ -1,11 +1,40 @@
-# BEGIN WordPress
+# Redirect to HTTPS and no www.
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+    RewriteEngine on
+
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www.ytrin.gs [NC]
+    RewriteRule ^(.*)$ https://ytrin.gs/$1 [R=301,L]
 </IfModule>
 
-# END WordPress
+<IfModule mod_mime.c>
+    # JavaScript
+    AddType text/javascript              js
+
+    # Web fonts
+    AddType font/woff                    woff
+    AddType font/woff2                   woff2
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                       "access plus 1 month"
+
+    # CSS
+    ExpiresByType text/css               "access plus 1 week"
+
+    # JavaScript
+    ExpiresByType text/javascript        "access plus 1 week"
+
+    # Web Open Font Format (WOFF) 1.0
+    ExpiresByType font/woff              "access plus 1 year"
+
+    # Web Open Font Format (WOFF) 2.0
+    ExpiresByType font/woff2             "access plus 1 year"
+</IfModule>

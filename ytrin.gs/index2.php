@@ -1,6 +1,6 @@
 <?php /*if(strtolower($_SERVER['HTTP_HOST']) != 'ytrin.gs' || strtolower($_SERVER['REQUEST_URI']) != '/frihed') {
 	header('HTTP/1.1 301 Moved Permanently');
-	header('Location: http://ytrin.gs/frihed');
+	header('Location: https://ytrin.gs/frihed');
 	exit();
 }*/ ?>
 
@@ -20,14 +20,14 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
-<link rel="stylesheet" id="google-font-css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700" />
+<link rel="stylesheet" id="google-font-css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700" />
 <link rel="stylesheet" id="ytringsfrihed-css" href="style.css" />
 </head>
 
 <body>
 <div id="wrap">
 	<div id="box">
-		<h1><a href="http://<?php echo strtolower($_SERVER['HTTP_HOST']) . strtolower($_SERVER['REQUEST_URI']) ?>">YTRIN.GS/FRIHED</a></h1>
+		<h1><a href="https://<?php echo strtolower($_SERVER['HTTP_HOST']) . strtolower($_SERVER['REQUEST_URI']) ?>">YTRIN.GS/FRIHED</a></h1>
 		<p>&nbsp;</p>
 		<h2>~ Grundlovens &sect;77 ~</h2>
 		<blockquote>
@@ -41,7 +41,7 @@
 	</div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <script src="cufon-yui.js"></script>
 <script src="Jura_400.font.js"></script>
