@@ -1,5 +1,6 @@
-/* noto-serif-regular - latin */
+/* noto-serif-400 - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 400;
@@ -7,8 +8,9 @@
        url('../webfonts/noto-serif-v8-latin-400.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../webfonts/noto-serif-v8-latin-400.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* noto-serif-italic - latin */
+/* noto-serif-400italic - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Noto Serif';
   font-style: italic;
   font-weight: 400;
@@ -18,93 +20,11 @@
 }
 /* noto-serif-700 - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 700;
   src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
        url('../webfonts/noto-serif-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../webfonts/noto-serif-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* crimson-text-regular - latin */
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Crimson Text Regular'), local('CrimsonText-Regular'),
-       url('../webfonts/crimson-text-v10-latin-400.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/crimson-text-v10-latin-400.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* crimson-text-italic - latin */
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Crimson Text Italic'), local('CrimsonText-Italic'),
-       url('../webfonts/crimson-text-v10-latin-400italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/crimson-text-v10-latin-400italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* crimson-text-600 - latin */
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'),
-       url('../webfonts/crimson-text-v10-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/crimson-text-v10-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* crimson-text-700 - latin */
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Crimson Text Bold'), local('CrimsonText-Bold'),
-       url('../webfonts/crimson-text-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/crimson-text-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* literata-regular - latin */
-@font-face {
-  font-family: 'Literata';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../webfonts/literata-v15-latin-400.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/literata-v15-latin-400.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* literata-italic - latin */
-@font-face {
-  font-family: 'Literata';
-  font-style: italic;
-  font-weight: 400;
-  src: local(''),
-       url('../webfonts/literata-v15-latin-400italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/literata-v15-latin-400italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* literata-500 - latin */
-@font-face {
-  font-family: 'Literata';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('../webfonts/literata-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/literata-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* literata-600 - latin */
-@font-face {
-  font-family: 'Literata';
-  font-style: normal;
-  font-weight: 600;
-  src: local(''),
-       url('../webfonts/literata-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/literata-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* literata-700 - latin */
-@font-face {
-  font-family: 'Literata';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../webfonts/literata-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../webfonts/literata-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
