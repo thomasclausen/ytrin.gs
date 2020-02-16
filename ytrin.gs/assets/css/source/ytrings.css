@@ -69,28 +69,24 @@ blockquote {
   position: relative;
   text-align: left;
 }
-blockquote p {
-  font-style: italic;
-  line-height: 1.5em;
-}
-blockquote p::before,
-blockquote p::after {
-  background-size: 100%;
-  content: '';
+blockquote .quote-open,
+blockquote .quote-close {
   height: 3em;
   opacity: 0.25;
   position: absolute;
   width: 3em;
 }
-blockquote p::before {
-  background-image: url(../images/quote-open.svg);
+blockquote .quote-open {
   left: 0;
   top: -0.75em;
 }
-blockquote p::after {
-  background-image: url(../images/quote-close.svg);
+blockquote .quote-close {
   bottom: -0.75em;
   right: 0;
+}
+blockquote p {
+  font-style: italic;
+  line-height: 1.5em;
 }
 
 
