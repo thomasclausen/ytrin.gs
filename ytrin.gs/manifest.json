@@ -1,0 +1,9 @@
+{
+  "name": "YTRIN.GS/FRIHED",
+  "short_name": "YTRIN.GS/FRIHED",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
