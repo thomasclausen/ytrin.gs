@@ -1,8 +1,10 @@
-<?php if(strtolower($_SERVER['HTTP_HOST']) != 'ytrin.gs' || strtolower($_SERVER['REQUEST_URI']) != '/frihed') {
+<?php
+if(strtolower($_SERVER['HTTP_HOST']) != 'ytrin.gs' || strtolower($_SERVER['REQUEST_URI']) != '/frihed') {
 	header('HTTP/1.1 301 Moved Permanently');
 	header('Location: https://ytrin.gs/frihed');
 	exit();
-} ?>
+}
+?>
 
 <!DOCTYPE html>
 <html lang="da-DK">
@@ -13,7 +15,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preload" href="/assets/webfonts/noto-serif-v8-latin-400.woff2" as="font" crossorigin />
 	<link rel="preload" href="/assets/webfonts/noto-serif-v8-latin-700.woff2" as="font" crossorigin />
-	<link rel="stylesheet" href="/assets/css/ytrings.min.css" />
+	<?php
+	$file = 'assets/css/ytrings.min.css';
+	$filesize = filesize($file);
+	if ($filesize < 4000) {
+		$filecontent = file_get_contents($file);
+		echo '<style data-filesize="' . $filesize . '">' . str_replace('url(../webfonts/', 'url(/assets/webfonts/', $filecontent) . '</style>';
+	} else {
+		echo '<link rel="stylesheet" href="/assets/css/ytrings.min.css" />';
+	}
+	?>
 </head>
 
 <body>
