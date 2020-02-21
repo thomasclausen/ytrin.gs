@@ -9,7 +9,7 @@
   --heading1Size: 3.6rem;
   --heading2Size: 2.4rem;
 
-  --textColor: #2f818e;
+  --textColor: #4c4b4a;
   --contentShadowColor: rgba(77,180,195,0.4);
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  color: #4db4c3;
+  color: #2f818e;
   font-size: calc(var(--heading1Size) + 0.25vw);
   font-weight: 700;
   line-height: 1em;

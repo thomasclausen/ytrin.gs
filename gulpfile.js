@@ -9,10 +9,11 @@ const watch = require('gulp-watch');
 
 const postcss = require('gulp-postcss');
 const postcssimport = require('postcss-import');
-const autoprefixer = require('autoprefixer');
 const postcsspresetenv = require('postcss-preset-env');
+const autoprefixer = require('autoprefixer');
 const cssmqpacker = require("css-mqpacker");
 const cssnano = require('cssnano');
+const purgecss = require('@fullhuman/postcss-purgecss');
 
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
@@ -39,6 +40,10 @@ gulp.task('styles', () => {
       browsers: pkg.browserslist
     }),
     cssmqpacker(),
+    purgecss({
+      content: [pkg.name + '/index.php'],
+      css: [pkg.name + '/assets/css/source/' + pkg.name.replace('.', '') + '.css']
+    }),
     cssnano()
   ];
 
