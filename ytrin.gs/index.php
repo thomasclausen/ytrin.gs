@@ -23,7 +23,7 @@ if(strtolower($_SERVER['HTTP_HOST']) != 'ytrin.gs' || strtolower($_SERVER['REQUE
 		$filecontent = file_get_contents($file);
 		echo '<style data-filesize="' . $filesize . '">' . str_replace('url(../webfonts/', 'url(/assets/webfonts/', $filecontent) . '</style>';
 	} else {
-		echo '<link rel="stylesheet" href="/assets/css/ytrings.min.css" />';
+		echo '<link rel="stylesheet" href="' . $file . '" />';
 	}
 	?>
 </head>
