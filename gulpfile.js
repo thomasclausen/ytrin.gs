@@ -104,7 +104,7 @@ gulp.task('images', () => {
         quality: '75'
       }),
       pngquant({
-        quality: '100'
+        quality: [0.6, 0.9]
       }),
       imagemin.svgo({
         plugins: [{
