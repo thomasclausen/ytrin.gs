@@ -33,12 +33,8 @@ const images = pkg.name + '/assets/images/source/*';
 gulp.task('styles', () => {
   const plugins = [
     postcssimport(),
-    autoprefixer({
-      browsers: pkg.browserslist
-    }),
-    postcsspresetenv({
-      browsers: pkg.browserslist
-    }),
+    autoprefixer(),
+    postcsspresetenv(),
     cssmqpacker(),
     purgecss({
       content: [pkg.name + '/index.php'],
