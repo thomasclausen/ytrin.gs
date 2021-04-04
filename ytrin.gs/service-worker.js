@@ -18,6 +18,16 @@ const stashInCache = (request, response) => {
     .then((cache) => cache.put(request, response));
 };
 
+const shouldBeIgnored = (url) => {
+  for (let i = 0, il = cacheIgnore.length; i < il; i++) {
+    if (url.indexOf(cacheIgnore[i]) !== -1) {
+      return true;
+    }
+  }
+
+  return false;
+};
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheName)
@@ -49,6 +59,11 @@ self.addEventListener('fetch', (event) => {
 
   // Ignore non-GET requests
   if (request.method !== 'GET') {
+    return;
+  }
+
+  // Ignore some specific requests
+  if (shouldBeIgnored(request.url)) {
     return;
   }
 
