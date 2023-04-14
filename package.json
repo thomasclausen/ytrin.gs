@@ -2,6 +2,11 @@
   "name": "ytrin.gs",
   "version": "1.0.0",
   "homepage": "https://ytrin.gs/frihed",
+  "author": {
+    "name": "Thomas Clausen",
+    "email": "kontakt@thomasclausen.dk",
+    "url": "https://thomasclausen.dk"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/thomasclausen/ytrin.gs.git"
