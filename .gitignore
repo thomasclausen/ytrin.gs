@@ -24,20 +24,6 @@ node_modules
 
 
 #############
-## Sublime Text
-#############
-
-sftp-config.json
-
-
-#############
-## Atom
-#############
-
-.ftpconfig
-
-
-#############
 ## gulp
 #############
 
